@@ -1,9 +1,10 @@
-/* 共通 css */
+/* 共通 css ここから */
 :root {
-    --font-color: ##2B2A27;
+    --font-color: #2B2A27;
 }
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 body {
     font-family: "Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif";
@@ -22,25 +23,69 @@ h1 {
     font-family: "Arial";
     font-weight: bold;
     font-size: 32px;
+    color: var(--font-color);
 }
 p {
     font-family: "Meiryo";
     font-size: 16px;
+    color: var(--font-color);
 }
 p.copy, a, a:visited {
     font-family: "Arial";
     font-size: 12px;
+    color: var(--font-color);
 }
 a.button {
     font-family: "Meiryo";
     font-size: 14px;
     text-decoration: none;
 }
+/* 共通 css ここまで */
 
+/* 大きい画面 ここから */
+img.mainvisual {
+    height: 100vh;
+    object-fit: cover;
+}
+img + div {
+    margin: 80px 0;
+}
+h1 {
+    margin-bottom: 20px;
+}
+div.images {
+    display: flex;
+    margin: 60px 0;
+}
+div.images img {
+    width: calc(100% / 3);
+    height: 500px;
+    object-fit: cover;
+}
+a.button {
+    display: inline-block;
+    border: 1px solid var(--font-color);
+    padding: 18px 60px;
+}
+div.sns {
+    margin-top: 80px;
+}
+div.sns a:not(:last-child) {
+    margin-right: 20px;
+}
+p.copy {
+    margin: 20px 0;
+}
+/* 大きい画面 ここまで */
 
-/* 小さい画面 */
-
-
-
-/* 大きい画面 */
-@media (min-width: 834px) {}
+@media (max-width: 834px) {
+img + div {
+    padding: 0 20px;
+}
+div.images {
+    flex-direction: column;
+}
+div.images img {
+    width: 100%
+}
+}
