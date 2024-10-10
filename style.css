@@ -1,0 +1,48 @@
+/* 共通 css */
+:root {
+    --font-color: ##2B2A27;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif";
+    color: var(--font-color);
+    margin: unset;
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1, p {
+    margin: unset;
+    padding: unset;
+}
+h1 {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 32px;
+}
+p {
+    font-family: "Meiryo";
+    font-size: 16px;
+}
+button {
+    font-family: "Meiryo";
+    font-size: 14px;
+    padding: unset;
+    background-color: unset;
+    border: unset;
+}
+p.copy, a, a:visited {
+    font-family: "Arial";
+    font-size: 12px;
+}
+
+
+/* 小さい画面 */
+
+
+
+/* 大きい画面 */
+@media (min-width: 834px) {}
