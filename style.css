@@ -27,16 +27,14 @@ p {
     font-family: "Meiryo";
     font-size: 16px;
 }
-button {
-    font-family: "Meiryo";
-    font-size: 14px;
-    padding: unset;
-    background-color: unset;
-    border: unset;
-}
 p.copy, a, a:visited {
     font-family: "Arial";
     font-size: 12px;
+}
+a.button {
+    font-family: "Meiryo";
+    font-size: 14px;
+    text-decoration: none;
 }
 
 
